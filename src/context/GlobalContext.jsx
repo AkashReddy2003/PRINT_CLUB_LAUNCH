@@ -7,8 +7,8 @@ const GloabalContext = createContext();
 
 const MyContextProvider = ({ children }) => {
   const db=getDatabase(app);
- //const url="https://print-club-backend.vercel.app/"
- const url="http://localhost:3000/"
+ const url="https://print-club-backend.vercel.app/"
+ //const url="http://localhost:3000/"
   const [load,setLoad]=useState(false);
   const add=async(email)=>{
     axios.post(url+"sendwelcome",{
