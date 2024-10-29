@@ -19,10 +19,31 @@ const MyContextProvider = ({ children }) => {
     })
 
     setLoad(true);
-    await push(ref(db,`emails`),{
-      email:email,
-      date:new Date(Date.now()).toISOString()
-    })
+    const emailsRef = ref(db, `emails`);
+
+    // Check if the email exists in the database
+    const snapshot = await get(emailsRef);
+    let emailExists = false;
+  
+    if (snapshot.exists()) {
+      snapshot.forEach((childSnapshot) => {
+        const data = childSnapshot.val();
+        if (data.email === email) {
+          emailExists = true;
+        }
+      });
+    }
+  
+    // If the email does not exist, push it
+    if (!emailExists) {
+      await push(emailsRef, {
+        email: email,
+        date: new Date(Date.now()).toISOString(),
+      });
+      console.log("Email added successfully!");
+    } else {
+      console.log("Email already exists.");
+    }
     setLoad(false);
 
   }
