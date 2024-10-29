@@ -26,7 +26,7 @@ function App() {
   return (
     <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
     <div className='maincont' style={{display:"flex"}}>
-      <div className='section' style={{height:800,display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#FFF8E8",flexDirection:"column"}}>
+      <div className='section' style={{height:"100%",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#FFF8E8",flexDirection:"column"}}>
         <h1 className='montserrat name'>PRINT CLUB</h1>
         <img src={logo} className='logo'/>
         <p className='montserrat desc'>
@@ -41,7 +41,7 @@ function App() {
       <div className='section' style={{display:"flex",justifyContent:"center",alignItems:"center",background:"black",}}>
         
        
-        <div style={{height: "100vh",width: "50vw",background:"rgba(0, 0, 0, 0.5)",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+        <div style={{width: "50vw",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
         <h1 className='montserrat' style={{width: "60%",color:"#FFF8E8",textAlign:"center"}}>No Rules, Just Bold Designs. Print Club Going Live Soon</h1>
         <Timer/>
         </div>

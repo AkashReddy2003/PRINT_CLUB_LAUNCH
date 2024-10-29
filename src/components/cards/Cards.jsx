@@ -93,7 +93,7 @@ function Deck() {
               
             }}
           />
-          <img src={cards[i]} className='cardimg' style={{width:window.screen.width>768?150:70,position: "absolute",pointerEvents:"none"}}/>
+          <img src={cards[i]} className='cardimg' style={{width:window.screen.width>1300?150:70,position: "absolute",pointerEvents:"none"}}/>
         </animated.div>
       ))}
     </>

@@ -49,7 +49,7 @@
   box-shadow: 0 0 35px black;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1300px){
   body {
     margin: 0;
     display: flex;
@@ -87,7 +87,7 @@
     height: 900px;
   }
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:1300px){
   body {
     margin: 0;
     display: flex;
@@ -96,6 +96,16 @@
     overflow: hidden;
     
     
+  }
+
+  .maincards{
+    top: 50%;
+    
+    
+  }
+
+  .section{
+    height: 100%;
   }
   .maincont{
     flex-direction: row;

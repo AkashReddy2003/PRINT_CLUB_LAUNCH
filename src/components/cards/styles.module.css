@@ -11,7 +11,7 @@
   
   
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width:1300px){
    
     .deck > div {
         background-color: #FFF8E8;
@@ -45,7 +45,7 @@
       }
   }
 
-  @media screen and (min-width:768px){
+  @media screen and (min-width:1300px){
     
     .deck > div {
         background-color: #FFF8E8;
