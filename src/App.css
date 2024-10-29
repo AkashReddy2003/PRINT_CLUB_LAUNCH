@@ -71,7 +71,19 @@
   }
 
   .maincards{
-    top: 110vh;
+   
+    align-self: center;
+    top: 800px;
+    left: 0vw;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    
+    
+  }
+  .section{
+    width: 100vw;
+    height: 1000px;
   }
 }
 @media screen and (min-width:768px){

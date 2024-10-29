@@ -18,12 +18,13 @@
         background-size: auto 85%;
         background-repeat: no-repeat;
         background-position: center center;
-        width: 50vh;
+        width: 200px;
         max-width: 100px;
         height: 90vh;
         max-height: 150px;
         will-change: transform;
         border-radius: 10px;
+        
         box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
       }
       .cardimg{
@@ -32,9 +33,9 @@
         pointer-events: none;
       }
       .deck {
-        
+        left: 10vw;
         position: absolute;
-        width: 250px;
+        width: 350px;
         height: 300px;
         will-change: transform;
         display: flex;
