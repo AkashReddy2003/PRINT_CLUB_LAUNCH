@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { app } from '../config/FirebaseConfig';
-import { getDatabase,push,ref,set } from "firebase/database";
+import { get, getDatabase,push,ref,set } from "firebase/database";
 import emailjs from '@emailjs/browser';
 import  axios, { Axios } from 'axios';
 const GloabalContext = createContext();
