@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -26,7 +27,14 @@ function App() {
   return (
     <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
     <div className='maincont' style={{display:"flex"}}>
-      <div className='section' style={{height:"100%",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#FFF8E8",flexDirection:"column"}}>
+      <motion.div className='section' style={{height:"100%",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#FFF8E8",flexDirection:"column"}}
+      initial={{ x: '-100vw', opacity: 0 }} // Start off-screen to the left
+      animate={{ x: 0, opacity: 1 }}        // Animate to the final position
+      transition={{
+        type: 'spring',                     // Gives it a natural, smooth easing
+        stiffness: 80,                      // Adjust stiffness for a bouncier effect
+        damping: 15,                        // Adjust damping for smoothness
+      }}>
         <h1 className='montserrat name'>PRINT CLUB</h1>
         <img src={logo} className='logo'/>
         <p className='montserrat desc'>
@@ -37,8 +45,15 @@ function App() {
           <a className='buttontext'>Notify me</a>
         </div>
 
-      </div>
-      <div className='section' style={{display:"flex",justifyContent:"center",alignItems:"center",background:"black",}}>
+      </motion.div>
+      <motion.div className='section' style={{display:"flex",justifyContent:"center",alignItems:"center",background:"black",}}
+      initial={{ x: '200vw', opacity: 0 }} // Start off-screen to the left
+      animate={{ x: 0, opacity: 1 }}        // Animate to the final position
+      transition={{
+        type: 'spring',                     // Gives it a natural, smooth easing
+        stiffness: 80,                      // Adjust stiffness for a bouncier effect
+        damping: 15,                        // Adjust damping for smoothness
+      }}>
         
        
         <div style={{width: "50vw",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
@@ -47,7 +62,7 @@ function App() {
         </div>
         
 
-      </div>
+      </motion.div>
 
     </div>
     <div style={{display:"flex",alignSelf:"center",position: "absolute",justifyContent:"center",alignItems:"center"}} className='maincards'>
