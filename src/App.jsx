@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { motion } from 'framer-motion';
 import reactLogo from './assets/react.svg'
+import { RotatingLines } from "react-loader-spinner";
 import viteLogo from '/vite.svg'
 import './App.css'
 import logo from "./assets/logo.png"
@@ -21,10 +22,13 @@ import sw2 from "./assets/sw_02.png"
 import zo1 from "./assets/zo_01.png"
 import Cards from './components/cards/Cards'
 import Timer from './components/timer/Timer'
+import { GloabalContext, MyContextProvider } from './context/GlobalContext';
 function App() {
-  const [count, setCount] = useState(0)
+  const [email, setEmail] = useState("");
+  const {load,add}=useContext(GloabalContext);
 
   return (
+   
     <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
     <div className='maincont' style={{display:"flex"}}>
       <motion.div className='section' style={{height:"100%",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#FFF8E8",flexDirection:"column"}}
@@ -41,8 +45,20 @@ function App() {
         Welcome to Print Club. Here, stickers and posters aren’t just products – they’re expressions of rebellion. From iconic posters that redefine walls to stickers that make a statement on anything you own, our designs are for those who stand out. Step into a world where art is raw, bold, and unfiltered
         </p>
         <div style={{width: "50%",display:"flex",flexDirection:"column",justifyContent:"space-between",alignItems:"center",marginTop:20}}>
-          <input placeholder='Enter your email' className='montserrat input'/>
-          <a className='buttontext'>Notify me</a>
+          <input placeholder='Enter your email' className='montserrat input' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+          <a className='buttontext'
+          onClick={()=>{
+            add(email);
+          }}
+          >{load?
+          <RotatingLines
+          strokeColor="grey"
+          strokeWidth="2"
+          animationDuration="0.75"
+          width="30"
+          visible={true}
+        />:
+          <span>Notify me</span>}</a>
         </div>
 
       </motion.div>
@@ -70,6 +86,7 @@ function App() {
     </div>
    
     </div>
+    
   )
 }
 
