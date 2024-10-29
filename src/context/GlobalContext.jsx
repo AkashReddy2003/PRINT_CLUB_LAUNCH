@@ -2,6 +2,8 @@ import React, { createContext, useState } from 'react';
 import { app } from '../config/FirebaseConfig';
 import { get, getDatabase,push,ref,set } from "firebase/database";
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-custom-alert';
+
 import  axios, { Axios } from 'axios';
 const GloabalContext = createContext();
 
@@ -34,8 +36,10 @@ const MyContextProvider = ({ children }) => {
         email: email,
         date: new Date(Date.now()).toISOString(),
       });
+      toast.success("Registered");
       console.log("Email added successfully!");
     } else {
+      toast.success("Already registered")
       console.log("Email already exists.");
       setLoad(false);
       return;
