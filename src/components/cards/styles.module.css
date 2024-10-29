@@ -33,7 +33,7 @@
         pointer-events: none;
       }
       .deck {
-        left: 10vw;
+       
         position: absolute;
         width: 350px;
         height: 300px;

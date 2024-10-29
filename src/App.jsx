@@ -26,7 +26,7 @@ function App() {
   return (
     <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
     <div className='maincont' style={{display:"flex"}}>
-      <div className='section' style={{display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#FFF8E8",flexDirection:"column"}}>
+      <div className='section' style={{height:800,display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"#FFF8E8",flexDirection:"column"}}>
         <h1 className='montserrat name'>PRINT CLUB</h1>
         <img src={logo} className='logo'/>
         <p className='montserrat desc'>
@@ -38,7 +38,7 @@ function App() {
         </div>
 
       </div>
-      <div className='section' style={{display:"flex",justifyContent:"center",alignItems:"center",background:"black"}}>
+      <div className='section' style={{display:"flex",justifyContent:"center",alignItems:"center",background:"black",}}>
         
        
         <div style={{height: "100vh",width: "50vw",background:"rgba(0, 0, 0, 0.5)",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
@@ -50,7 +50,7 @@ function App() {
       </div>
 
     </div>
-    <div style={{display:"flex",alignSelf:"center",position: "absolute",}} className='maincards'>
+    <div style={{display:"flex",alignSelf:"center",position: "absolute",justifyContent:"center",alignItems:"center"}} className='maincards'>
       <Cards/>
     </div>
    

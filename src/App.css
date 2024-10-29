@@ -62,8 +62,8 @@
     padding-top: 50px;
     flex-direction: column;
     width: 100vw;
-    height: 200vh;
-    overflow: hidden;
+    
+    
   }
 
   .buttontext{
@@ -73,9 +73,10 @@
   .maincards{
    
     align-self: center;
-    top: 800px;
-    left: 0vw;
+    top: 750px;
+    
     width: 400px;
+    max-width: 100vw;
     height: 400px;
     overflow: hidden;
     
@@ -83,7 +84,7 @@
   }
   .section{
     width: 100vw;
-    height: 1000px;
+    height: 900px;
   }
 }
 @media screen and (min-width:768px){
