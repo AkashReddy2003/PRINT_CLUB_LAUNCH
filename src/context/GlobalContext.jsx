@@ -11,13 +11,7 @@ const MyContextProvider = ({ children }) => {
  //const url="http://localhost:3000/"
   const [load,setLoad]=useState(false);
   const add=async(email)=>{
-    axios.post(url+"sendwelcome",{
-      email:email,
-      subject:"You’re on the List! Expect Big News Soon",
-      message:"Hi"
-
-    })
-
+    
     setLoad(true);
     const emailsRef = ref(db, `emails`);
 
@@ -43,7 +37,16 @@ const MyContextProvider = ({ children }) => {
       console.log("Email added successfully!");
     } else {
       console.log("Email already exists.");
+      setLoad(false);
+      return;
     }
+    axios.post(url+"sendwelcome",{
+      email:email,
+      subject:"You’re on the List! Expect Big News Soon",
+      message:"Hi"
+
+    })
+
     setLoad(false);
 
   }
