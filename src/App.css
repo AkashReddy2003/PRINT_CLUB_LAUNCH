@@ -83,6 +83,10 @@
     
     
   }
+
+  .pad{
+    margin-top: 150px;
+  }
   .section{
     width: 100vw;
     height: 900px;

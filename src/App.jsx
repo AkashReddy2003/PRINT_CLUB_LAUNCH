@@ -73,7 +73,7 @@ function App() {
         
        
         <div style={{width: "50vw",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
-        <h1 className='montserrat' style={{width: "60%",color:"#FFF8E8",textAlign:"center"}}>No Rules, Just Bold Designs. Print Club Going Live Soon</h1>
+        <h1  className='montserrat pad' style={{width: "60%",color:"#FFF8E8",textAlign:"center"}}>No Rules, Just Bold Designs. Print Club Going Live Soon</h1>
         <Timer/>
         </div>
         
