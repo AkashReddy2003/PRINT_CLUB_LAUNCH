@@ -29,7 +29,7 @@ export default function Timer() {
         </div>
         <div  style={{height: 80,width: 60,background:"#FFF8E8",display:"flex",justifyContent:"center",alignItems:"center",borderRadius: 10,flexDirection:"column",boxShadow: "0 0 20px #FFF8E8"}}>
         <h1 className='montserrat' style={{color:"black",textAlign:"center",lineHeight:0.1}}>{remainingHours}</h1>
-        <h1 className='montserrat' style={{color:"black",textAlign:"center",fontSize: 15,lineHeight:0.1}}>Hourss</h1>
+        <h1 className='montserrat' style={{color:"black",textAlign:"center",fontSize: 15,lineHeight:0.1}}>Hours</h1>
         </div>
         <div  style={{height: 80,width: 60,display:"flex",justifyContent:"center",alignItems:"center",borderRadius: 10,}}>
         <h1 className='montserrat' style={{color:"#FFF8E8",textAlign:"center"}}>:</h1>
