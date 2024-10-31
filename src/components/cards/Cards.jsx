@@ -4,21 +4,21 @@ import { useDrag } from 'react-use-gesture'
 
 import styles from './styles.module.css'
 
-import bg from "./assets/bg.png"
-import th1 from "./assets/th_01.png"
-import th2 from "./assets/th_02.png"
-import th3 from "./assets/th_03.png"
-import bb1 from "./assets/bb_02.png"
-import dw1 from "./assets/dw_01.png"
-import dw2 from "./assets/dw_02.png"
-import jk1 from "./assets/jk_01.png"
-import jw1 from "./assets/jw_01.png"
-import mot1 from "./assets/mot_02.png"
-import op1 from "./assets/op_01.png"
-import op2 from "./assets/op_02.png"
-import sw1 from "./assets/sw_01.png"
-import sw2 from "./assets/sw_02.png"
-import zo1 from "./assets/zo_01.png"
+
+import th1 from "./assets/th_01.webp"
+import th2 from "./assets/th_02.webp"
+import th3 from "./assets/th_03.webp"
+import bb1 from "./assets/bb_02.webp"
+import dw1 from "./assets/dw_01.webp"
+import dw2 from "./assets/dw_02.webp"
+import jk1 from "./assets/jk_01.webp"
+import jw1 from "./assets/jw_01.webp"
+import mot1 from "./assets/mot_02.webp"
+import op1 from "./assets/op_01.webp"
+import op2 from "./assets/op_02.webp"
+import sw1 from "./assets/sw_01.webp"
+import sw2 from "./assets/sw_02.webp"
+import zo1 from "./assets/zo_01.webp"
 const cards = [
   th1,
   th2,
